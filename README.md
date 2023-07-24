@@ -3,7 +3,6 @@
     Tran Nguyen
     June 20,2023
  -->
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -34,7 +33,7 @@
 	}
 	nav a 
         {
-            height: 45px;
+            height: 50px;
             width: 120px;
 			display: inline-block;
 			color: white;
