@@ -73,7 +73,7 @@
         </div>-->
         <nav>
             <a href="https://www.linkedin.com/in/tran-nguyen-667853258/"><span class="icon"></span>LinkedIn</a>
-            <a href="https://drive.google.com/file/d/1i31WtuSiyPXI5XSJBfKV9tUmjLpaVhtS/view?usp=sharing"><span class="icon"></span>Resume</a>
+            <a href="https://drive.google.com/file/d/1ys7sWXvTsdLiNUSx6mVIRfYUCeVQxVDk/view"><span class="icon"></span>Resume</a>
             <a href="mailto: ntran.nguyen23@gmail.com"><span class="icon"></span>Contact Me</a>
         </nav>
     </header>
@@ -87,7 +87,7 @@
                 and in the future, I want to become a software engineer. <br><br>
                 Click on the link below to access to my Resume:
                 </P>
-                <a href = "https://drive.google.com/file/d/1i31WtuSiyPXI5XSJBfKV9tUmjLpaVhtS/view?usp=sharing">Tran Nguyen's Resume</a>
+                <a href = "https://drive.google.com/file/d/1ys7sWXvTsdLiNUSx6mVIRfYUCeVQxVDk/view">Tran Nguyen's Resume</a>
 
     </section>
     <section id="contact">
