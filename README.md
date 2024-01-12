@@ -3,6 +3,7 @@
     Tran Nguyen
     June 20,2023
  -->
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -30,8 +31,8 @@
 			align-items: center;
 			height: 80px;
 			margin-top: 20px;
-	}
-	nav a 
+		}
+		nav a 
         {
             height: 50px;
             width: 120px;
@@ -83,8 +84,8 @@
         
             <h2>Resume</h2>
             <P>Hello! My name is Tran Nguyen and I major in Computer Science at California State University, Long Beach. 
-                I am a second year student pursing Bachelor's Degree. <br><br> I am interested in both front-end and back-end development,
-                and in the future, I want to become a software engineer. <br><br>
+                I am a third year student pursing Bachelor's Degree. <br><br> I am interested in both front-end and back-end development.
+                In the future, I want to work in Machine Learning and AI. <br><br>
                 Click on the link below to access to my Resume:
                 </P>
                 <a href = "https://drive.google.com/file/d/1ys7sWXvTsdLiNUSx6mVIRfYUCeVQxVDk/view">Tran Nguyen's Resume</a>
