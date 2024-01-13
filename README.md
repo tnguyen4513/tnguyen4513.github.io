@@ -1,4 +1,3 @@
-# tnguyen4513.github.io
 <!-- 
     Tran Nguyen
     June 20,2023
@@ -31,6 +30,7 @@
 			align-items: center;
 			height: 80px;
 			margin-top: 20px;
+            margin-bottom: 20px;
 		}
 		nav a 
         {
@@ -84,7 +84,7 @@
 
 
     <section id="about">
-            <br>
+            
             <img src="myimage.jpg" alt="My Picture" class="center">
             <h2>About Me</h2>
             <P> Greetings, I'm Tran Nguyen, currently in my third year pursuing a major in Computer Science at California State 
@@ -94,7 +94,7 @@
                 at CSU Long Beach is not just an academic pursuit; it's a passionate exploration of how computer science can 
                 revolutionize and redefine our future.
             </P>
-            <br>
+            
                
 
     </section>
