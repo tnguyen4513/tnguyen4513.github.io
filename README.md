@@ -3,7 +3,7 @@
     Tran Nguyen
     June 20,2023
  -->
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -15,8 +15,8 @@
             background: linear-gradient(to bottom right, gray, rgb(0, 0, 0), violet);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 20px;
-            margin-left: 150px;
-            margin-right: 150px;
+            margin-left: 300px;
+            margin-right: 300px;
             color: white;
 		}
         a, p
@@ -34,8 +34,8 @@
 		}
 		nav a 
         {
-            height: 50px;
-            width: 120px;
+            height: 45px;
+            width: 110px;
 			display: inline-block;
 			color: white;
 			text-align: center;
@@ -48,6 +48,9 @@
         .center
         {
             text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         .image {
   			position: absolute;
@@ -81,14 +84,18 @@
 
 
     <section id="about">
-        
-            <h2>Resume</h2>
-            <P>Hello! My name is Tran Nguyen and I major in Computer Science at California State University, Long Beach. 
-                I am a third year student pursing Bachelor's Degree. <br><br> I am interested in both front-end and back-end development.
-                In the future, I want to work in Machine Learning and AI. <br><br>
-                Click on the link below to access to my Resume:
-                </P>
-                <a href = "https://drive.google.com/file/d/1ys7sWXvTsdLiNUSx6mVIRfYUCeVQxVDk/view">Tran Nguyen's Resume</a>
+            <br>
+            <img src="myimage.jpg" alt="My Picture" class="center">
+            <h2>About Me</h2>
+            <P> Greetings, I'm Tran Nguyen, currently in my third year pursuing a major in Computer Science at California State 
+                University Long Beach. What truly ignites my enthusiasm is the intersection of technology and intelligence, 
+                particularly in the realms of robotics and artificial intelligence. As I immerse myself in the world of coding 
+                and computational thinking, I'm on a quest to unravel the complexities of these cutting-edge fields. My journey 
+                at CSU Long Beach is not just an academic pursuit; it's a passionate exploration of how computer science can 
+                revolutionize and redefine our future.
+            </P>
+            <br>
+               
 
     </section>
     <section id="contact">
@@ -101,6 +108,6 @@
     
 
     <footer>
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        <p>&copy; 2023 Tran Nguyen. All rights reserved.</p>
     </footer>
 </body>
