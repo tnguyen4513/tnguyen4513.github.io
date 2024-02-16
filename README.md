@@ -93,21 +93,21 @@
                 and computational thinking, I'm on a quest to unravel the complexities of these cutting-edge fields. My journey 
                 at CSU Long Beach is not just an academic pursuit; it's a passionate exploration of how computer science can 
                 revolutionize and redefine our future.
+
+		    
             </P>
             
-               
-
     </section>
     <section id="contact">
         <h2>Contact Me</h2> 
         <a href = "tel:+17142344056"> (714) 234-4056 </a>
-        <br>
-        <br>
         <a href = "mailto: ntran.nguyen23@gmail.com" >ntran.nguyen23@gmail.com </a>
     </section>
-    
+    <p>
 
+	    
+    </p>
     <footer>
-        <p>&copy; 2023 Tran Nguyen. All rights reserved.</p>
+        <p>&copy; 2024 Tran Nguyen. All rights reserved.</p>
     </footer>
 </body>
