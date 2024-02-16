@@ -71,16 +71,12 @@
     <header>
         <h1 class = "center" >Hello, I'm Tran Nguyen!</h1>
         <h2 class = "center" >Welcome to my portfolio!</h2>
-        <!-- Add your navigation menu here -->
-        <!--<div class="image">
-            <img src="myimage.jpg" alt="My Picture">
-        </div>-->
-        <nav>
+    </header>
+	<nav>
             <a href="https://www.linkedin.com/in/tran-nguyen-667853258/"><span class="icon"></span>LinkedIn</a>
             <a href="https://drive.google.com/file/d/1ys7sWXvTsdLiNUSx6mVIRfYUCeVQxVDk/view?usp=sharing"><span class="icon"></span>Resume</a>
             <a href="mailto: ntran.nguyen23@gmail.com"><span class="icon"></span>Contact Me</a>
         </nav>
-    </header>
 
 
     <section id="about">
@@ -101,6 +97,9 @@
     <section id="contact">
         <h2>Contact Me</h2> 
         <a href = "tel:+17142344056"> (714) 234-4056 </a>
+	<p>
+		
+	</p>
         <a href = "mailto: ntran.nguyen23@gmail.com" >ntran.nguyen23@gmail.com </a>
     </section>
     <p>
