@@ -74,7 +74,7 @@
     </header>
 	<nav>
             <a href="https://www.linkedin.com/in/tran-nguyen-667853258/"><span class="icon"></span>LinkedIn</a>
-            <a href="https://drive.google.com/file/d/1f1XA2pHrlR6yWtus71jBSGArsTlt1CgD/view?usp=sharing"><span class="icon"></span>Resume</a>
+            <a href="https://drive.google.com/file/d/12D4Ci4JPNw39q3Pg7odPayxOj2YNRGbS/view?usp=sharing"><span class="icon"></span>Resume</a>
             <a href="mailto: ntran.nguyen23@gmail.com"><span class="icon"></span>Contact Me</a>
         </nav>
 
