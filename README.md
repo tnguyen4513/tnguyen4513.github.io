@@ -2,7 +2,7 @@
     Tran Nguyen
     June 20,2023
  -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
 <head>
     <meta charset="utf-8">
