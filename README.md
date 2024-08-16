@@ -1,8 +1,8 @@
 <!-- 
     Tran Nguyen
     June 20,2023
- --> 
-<!-- <!DOCTYPE html> -->
+ -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -69,15 +69,17 @@
 <body>
     
     <header>
-        <h1 class = "center" >Hello, I'm Tran Nguyen!</h1>
-        <h2 class = "center" >Welcome to my portfolio!</h2>
+        <p class= 'center' style="font-size: 45px; color: #f7f7f7; font-weight: 500;">Hello, I'm Tran Nguyen!</p>
+        <p class= 'center' style="font-size: 35px; color: #f7f7f7; font-weight: 500;">Welcome to my portfolio!</p>
+        <!-- <h1 class = "center" >Hello, I'm Tran Nguyen!</h1>
+        <h2 class = "center" >Welcome to my portfolio!</h2> -->
         <!-- Add your navigation menu here -->
         <!--<div class="image">
             <img src="myimage.jpg" alt="My Picture">
         </div>-->
         <nav>
             <a href="https://www.linkedin.com/in/tran-nguyen-667853258/"><span class="icon"></span>LinkedIn</a>
-            <a href="https://drive.google.com/file/d/12D4Ci4JPNw39q3Pg7odPayxOj2YNRGbS/view"><span class="icon"></span>Resume</a>
+            <a href="https://drive.google.com/file/d/1ys7sWXvTsdLiNUSx6mVIRfYUCeVQxVDk/view?usp=sharing"><span class="icon"></span>Resume</a>
             <a href="mailto: ntran.nguyen23@gmail.com"><span class="icon"></span>Contact Me</a>
         </nav>
     </header>
@@ -87,7 +89,7 @@
             
             <img src="myimage.jpg" alt="My Picture" class="center">
             <h2>About Me</h2>
-            <P> Greetings, I'm Tran Nguyen, currently in my fourth year pursuing a major in Computer Science at California State 
+            <P> Greetings, I'm Tran Nguyen, currently in my third year pursuing a major in Computer Science at California State 
                 University Long Beach. What truly ignites my enthusiasm is the intersection of technology and intelligence, 
                 particularly in the realms of robotics and artificial intelligence. As I immerse myself in the world of coding 
                 and computational thinking, I'm on a quest to unravel the complexities of these cutting-edge fields. My journey 
@@ -98,20 +100,16 @@
                
 
     </section>
-    <section id="project">
-        <h2>My Projects</h2>
-        <a href="https://tnguyen4513.github.io/todolist/"> To-Do List App </a>
-        
-    </section>
-    <br>
     <section id="contact">
         <h2>Contact Me</h2> 
-        <a href = "mailto: ntran.nguyen23@gmail.com" >ntran.nguyen23@gmail.com</a>
-        <br><br><br>
+        <a href = "tel:+17142344056"> (714) 234-4056 </a>
+        <br>
+        <br>
+        <a href = "mailto: ntran.nguyen23@gmail.com" >ntran.nguyen23@gmail.com </a>
     </section>
     
-    
+
     <footer>
-        <p>&copy; 2024 Tran Nguyen. All rights reserved.</p>
+        <p>&copy; 2023 Tran Nguyen. All rights reserved.</p>
     </footer>
 </body>
