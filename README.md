@@ -103,7 +103,7 @@
     <section id="project">
         <h2>My Projects</h2>
         <a href="https://tnguyen4513.github.io/todolist/"> To-Do List App </a>
-        
+        <a href="https://tnguyen4513.github.io/2048/"> 2048 Game </a>
     </section>
     <br>
     <section id="contact">
