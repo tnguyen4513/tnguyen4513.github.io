@@ -1,0 +1,142 @@
+<!-- 
+    Author: Tran Nguyen
+ --> 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tran Nguyen's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Toggle Switch -->
+            <label class="toggle" for="switch" data-tooltip="Click to switch mode">
+                <input id="switch" class="input" type="checkbox">
+                <div class="icon icon--moon">
+                    <svg height="32" width="32" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" fill-rule="evenodd"></path>
+                    </svg>
+                </div>
+            
+                <div class="icon icon--sun">
+                    <svg height="32" width="32" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"></path>
+                    </svg>
+                </div>
+            </label>
+            <span class="mode-label">Dark Mode</span>
+        </div>
+
+        <h1 class="center">Hello, I'm Tran Nguyen!</h1>
+        <h2 class="center">Welcome to my portfolio!</h2>
+        <nav>
+            <a href="https://drive.google.com/file/d/12D4Ci4JPNw39q3Pg7odPayxOj2YNRGbS/view"><span class="icon"></span>Resume</a>
+            <a href="https://www.linkedin.com/in/tran-nguyen-667853258/"><span class="icon"></span>LinkedIn</a>
+            <a href="https://github.com/tnguyen4513"><span class="icon"></span>GitHub</a>
+        </nav>
+    </header>
+    <script src="script.js"></script>
+ 
+     <section id="about">
+         <img src="myimage.jpg" alt="My Picture" class="center">
+         <br>
+         <h2>About Me</h2>
+         <p> Greetings, I'm Tran Nguyen, currently in my fourth year pursuing a BS in Computer Science at California State 
+             University Long Beach, with an expected graduation in December 2025. I have a strong interest in the field of data 
+             science and am actively building my skills to pursue a career in this area. Although I’m just beginning my journey, 
+             I am eager to apply my analytical mindset and technical knowledge to real-world data challenges. Additionally, I am 
+             bilingual in Vietnamese and English, which enhances my ability to communicate effectively with diverse teams and 
+             stakeholders. I’m looking for opportunities to grow as a data analyst, ideally in Orange County or in a 100% remote 
+             position, where I can contribute to data-driven decision-making.
+         </p>
+     </section>
+ 
+     <section id="skills">  
+         <h2>Skills</h2>
+         <ul>
+             <li>Languages: C++, Python, Javascript, Java, MIPS Assembly</li>
+             <li>Web and Database: HTML, CSS, SQL, IBM Db2, MySQL</li>
+             <li>Framework and Technologies: Git, Linux, Visual Studio Code, Tkinter, React, MS Office (Excel, Word)</li>
+         </ul>  
+     </section>
+ 
+     <section id="experience">  
+         <h2>Work Experience</h2>
+         <p> Customer Service Associate (Part-time) <br>
+         <em>H-Mart, Garden Grove, CA</em> <br> June 2021 - Present </p>
+         <ul>
+             <li>Delivered high-quality customer service by addressing inquiries and resolving issues efficiently.</li>
+             <li>Worked with Excel to maintain and update purchase and sale reports, contributing to efficient 
+             inventory management.</li>
+             <li>Used BarTender software to print signs and labels, supporting store promotions and product organization.</li>
+         </ul>
+     </section>
+ 
+     <section id="project">
+         <h2>My Projects</h2>
+         <p> <b> To-Do List App </b> | React, JavaScript, CSS |    
+         <a href="https://tnguyen4513.github.io/todolist/" class="external-link">Link</a><br>
+         <em>YouTube Tutorial Project</em> <br> Aug 2024 </p>
+         <ul>
+             <li>Developed a responsive to-do list application using React.</li>
+             <li>Implemented features for task management, including adding, deleting, updating, 
+             and marking tasks as complete.</li>
+             <li>Improved user experience through state management and functional components.</li>
+         </ul>
+         
+         <p> <b> 2048 Game </b> | HTML, JavaScript, CSS | 
+         <a href="https://tnguyen4513.github.io/2048/2048.html" class="external-link">Link</a><br>
+         <em>YouTube Tutorial Project</em> <br> Aug 2024 </p>
+         <ul>
+             <li>Created the classic 2048 game using HTML, JavaScript, and CSS.</li>
+             <li>Developed game mechanics like tile merging and score tracking.</li>
+             <li>Focused on clean code practices and responsive design for a smooth user experience.</li>
+         </ul>
+         
+         <p> <b>Course list</b> | C++  <br>
+         <em>School Group Project</em> <br> April 2023 - May 2023 </p>
+         <ul>
+             <li>Directed a team of four in designing and developing a console application to manage 
+             and manipulate computer science course data for Orange Coast College.</li>
+             <li>Oversaw the implementation of search functionality and list management features, 
+             ensuring a smooth and responsive user experience.</li>
+             <li>Provided leadership and technical guidance, fostering collaboration and efficient 
+             project completion.</li>
+         </ul>
+         
+         <p> <b>Pizza Ordering App</b> | Python <br>
+         <em>School Group Project</em> <br> Oct 2022 - Nov 2022 </p>
+         <ul>
+             <li>Collaborated in a team of two to develop a pizza ordering application.</li>
+             <li>Implemented a user-friendly interface using Tkinter which allows users to 
+             select pizza size, crust, and toppings from a given menu.</li>
+             <li>Developed features to display an order summary and calculate the total cost.</li>
+         </ul>
+     </section>
+ 
+     <section id="certification">  
+         <h2>Certification</h2>
+         <p> <b> Certificate of Specialization - C++ Programming | </b>
+         <a href="https://drive.google.com/file/d/1ODMrbv70Y7cu9sqqAhdRSM07bAMJC3XD/view"
+         class="external-link">Link </a> </p>
+         <ul>
+             <li>Awarded by Orange Coast College, Costa Mesa in May 2023.</li>
+             <li>Completed coursework in object-oriented programming, data structures, and algorithms using C++.</li>
+         </ul>  
+     </section>
+ 
+     <section id="contact">
+         <h2>Contact Me</h2> 
+         <a href="mailto:ntran.nguyen23@gmail.com">ntran.nguyen23@gmail.com</a>
+     </section>
+     
+ 
+     <footer>
+         <p>&copy; 2024 Tran Nguyen. All rights reserved.</p>
+     </footer>
+ </body>
+ </html>
+ 
