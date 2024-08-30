@@ -64,7 +64,7 @@ nav a:hover::after {
   color: white;
   font-size: 18px;
   margin-top: 20px;
-  position: absolute; top: 67px; right: 36px;
+  position: absolute; top: 67px; right: 32px;
 }
 .input {
   display: none;
