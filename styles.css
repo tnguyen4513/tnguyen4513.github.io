@@ -1,3 +1,58 @@
+/* Toast (small pop-up) styling */
+.toast {
+  visibility: hidden; /* Hidden by default */
+  min-width: 300px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  font-size: 17px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+/* Show the toast */
+.toast.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 7.5s;
+  animation: fadein 0.5s, fadeout 0.5s 7.5s;
+}
+/* Fade in and fade out effects */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+/* Close button */
+.close-toast {
+  margin-left: 15px;
+  color: #fff;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.close-toast:hover {
+  color: #bbb;
+}
+
 /* Tooltip container */
 .toggle:hover::after {
     content: attr(data-tooltip);
