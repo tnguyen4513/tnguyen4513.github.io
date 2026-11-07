@@ -1,183 +1,379 @@
-<!-- 
-    Author: Tran Nguyen
- --> 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tran Nguyen's Portfolio</title>
+    <title>Tran Nguyen — Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Subtle starfield background -->
+    <div class="stars" aria-hidden="true"></div>
+    <div class="stars stars-2" aria-hidden="true"></div>
+    <div class="stars stars-3" aria-hidden="true"></div>
+
+    <!-- Toast -->
     <div id="toast" class="toast">
-        This portfolio is best viewed on a laptop or PC web browser.
-        <span class="close-toast" id="closeToast">&times;</span>
+        Best viewed on a larger screen
+        <button class="close-toast" id="closeToast" aria-label="Close">&times;</button>
     </div>
-    
-    
-    <header>
-        <div class="container">
-            <!-- Toggle Switch -->
-            <label class="toggle" for="switch" data-tooltip="Click to switch mode">
-                <input id="switch" class="input" type="checkbox">
-                <div class="icon icon--moon">
-                    <svg height="32" width="32" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path clip-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" fill-rule="evenodd"></path>
-                    </svg>
-                </div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="#hero" class="logo">TN<span class="logo-dot">.</span></a>
             
-                <div class="icon icon--sun">
-                    <svg height="32" width="32" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"></path>
-                    </svg>
-                </div>
-            </label>
-            <span class="mode-label">Dark Mode</span>
+            <nav class="nav" id="nav">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <label class="theme-toggle" for="switch" title="Toggle theme">
+                    <input id="switch" type="checkbox" class="theme-input">
+                    <span class="theme-icon moon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    </span>
+                    <span class="theme-icon sun">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    </span>
+                </label>
+                <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
-
-        <h1 class="center">Hello, I'm Tran Nguyen!</h1>
-        <h2 class="center">Welcome to my portfolio!</h2>
-        <nav>
-            <a href="https://drive.google.com/file/d/12D4Ci4JPNw39q3Pg7odPayxOj2YNRGbS/view"><span class="icon"></span>Resume</a>
-            <a href="https://www.linkedin.com/in/tran-nguyen-667853258/"><span class="icon"></span>LinkedIn</a>
-            <a href="https://github.com/tnguyen4513"><span class="icon"></span>GitHub</a>
-        </nav>
     </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <p class="hero-eyebrow">Aspiring Cybersecurity Professional</p>
+                <h1 class="hero-title">Hello, I'm <span class="accent">Tran Nguyen</span></h1>
+                <p class="hero-subtitle">
+                    BS Computer Science · CompTIA Security+ Candidate · Building secure systems one layer at a time
+                </p>
+                <div class="hero-links">
+                    <a href="https://drive.google.com/file/d/12D4Ci4JPNw39q3Pg7odPayxOj2YNRGbS/view" class="btn btn-primary" target="_blank" rel="noopener">
+                        Resume <span class="arrow">→</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tran-nguyen-667853258/" class="btn btn-ghost" target="_blank" rel="noopener">
+                        LinkedIn <span class="arrow">→</span>
+                    </a>
+                    <a href="https://github.com/tnguyen4513" class="btn btn-ghost" target="_blank" rel="noopener">
+                        GitHub <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+            <a href="#about" class="scroll-hint" aria-label="Scroll to about">
+                <span class="scroll-arrow">↓</span>
+            </a>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">01</span>
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="portrait.png" alt="Tran Nguyen" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                        <div class="image-fallback" style="display:none">TN</div>
+                    </div>
+                    <div class="about-content">
+                        <p>
+                            Recent BS Computer Science graduate from California State University, Long Beach (December 2025). 
+                            I'm preparing for CompTIA Security+ and building practical experience through IT support simulations, 
+                            vulnerability assessments, and virtualized lab environments.
+                        </p>
+                        <p>
+                            My CS background sharpened analytical thinking and programming skills; technical support work 
+                            reinforced clear communication. Bilingual in Vietnamese and English. Seeking entry-level IT support 
+                            or cybersecurity roles in Orange County or fully remote.
+                        </p>
+                        <ul class="highlights">
+                            <li><span class="dot"></span> CompTIA Security+ Candidate</li>
+                            <li><span class="dot"></span> 50+ Service Desk tickets resolved</li>
+                            <li><span class="dot"></span> Nessus vulnerability assessments</li>
+                            <li><span class="dot"></span> VM experience (UTM · Windows · Kali)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">02</span>
+                    <h2>Skills</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Cybersecurity & IT</h3>
+                        <div class="tags">
+                            <span>CompTIA Security+</span>
+                            <span>Windows</span>
+                            <span>Linux</span>
+                            <span>macOS</span>
+                            <span>UTM / Virtualization</span>
+                            <span>Nessus Essentials</span>
+                            <span>Service Desk</span>
+                            <span>Microsoft 365</span>
+                            <span>SharePoint</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Languages</h3>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>C++</span>
+                            <span>Java</span>
+                            <span>JavaScript</span>
+                            <span>Kotlin</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Tools & Tech</h3>
+                        <div class="tags">
+                            <span>Git</span>
+                            <span>VS Code</span>
+                            <span>React</span>
+                            <span>MySQL</span>
+                            <span>IBM Db2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">03</span>
+                    <h2>Experience</h2>
+                </div>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Bilingual Customer Service Representative</h3>
+                                <span class="timeline-date">Sep 2026 – Present</span>
+                            </div>
+                            <p class="timeline-org">Advanced Medical Management — Long Beach, CA</p>
+                            <ul>
+                                <li>Provide English/Vietnamese support to members, providers, and health plans across multiple states (NY, GA, WA, HI)</li>
+                                <li>Handle high-volume calls on claims, eligibility, prior authorizations, benefits, and case management</li>
+                                <li>Research and resolve issues using StormDTA, EZNet, EZCap, Patient Center, Outlook, and Word</li>
+                                <li>Document interactions accurately in CRM/EHR systems and conduct outbound follow-up for full resolution</li>
+                                <li>Meet KPIs for call metrics, first-call resolution, documentation quality, and service standards</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>IT Student Assistant</h3>
+                                <span class="timeline-date">Oct 2024 – May 2025</span>
+                            </div>
+                            <p class="timeline-org">CSU Long Beach – College of the Arts Dean’s Office</p>
+                            <ul>
+                                <li>Provided technical support to faculty, staff, and students across Windows & macOS</li>
+                                <li>Troubleshot hardware, software, and account issues</li>
+                                <li>Designed SharePoint sites to improve accessibility and streamline processes</li>
+                                <li>Collaborated with IT staff; completed Microsoft technical training</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Medical Office Assistant</h3>
+                                <span class="timeline-date">Jun 2021 – Sep 2026</span>
+                            </div>
+                            <p class="timeline-org">ABC World Medical Supply, DME — Garden Grove, CA</p>
+                            <ul>
+                                <li>Assisted Vietnamese-speaking patients with diabetic footwear selection and ordering process</li>
+                                <li>Followed up with physicians’ offices for Medicare documentation, Diabetic Foot Exams, and prescriptions</li>
+                                <li>Coordinated documentation between patients, medical offices, and the DME provider</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Customer Service Associate</h3>
+                                <span class="timeline-date">Jun 2021 – Sep 2026</span>
+                            </div>
+                            <p class="timeline-org">H-Mart — Garden Grove, CA</p>
+                            <ul>
+                                <li>Delivered service in a high-volume retail environment</li>
+                                <li>Used Excel and BarTender for reporting and labeling</li>
+                                <li>Maintained digital records and shared documentation systems</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">04</span>
+                    <h2>Projects</h2>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span class="project-type">Self-Study</span>
+                            <span class="project-date">Jan 2026 – Present</span>
+                        </div>
+                        <h3>IT Service Desk Simulator</h3>
+                        <p>Completed 50+ simulated support tickets covering hardware, software, and authentication issues. Applied structured troubleshooting, prioritized by business impact, and practiced clear documentation.</p>
+                        <div class="project-tags">
+                            <span>Troubleshooting</span>
+                            <span>Documentation</span>
+                            <span>Customer Service</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span class="project-type">Lab</span>
+                        </div>
+                        <h3>Nessus Vulnerability Assessment</h3>
+                        <p>Performed scans with Nessus Essentials on a local network, analyzed findings, documented remediation recommendations, and built foundational vulnerability management knowledge.</p>
+                        <div class="project-tags">
+                            <span>Nessus</span>
+                            <span>Vulnerability Mgmt</span>
+                            <span>Risk Assessment</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span class="project-type">School · Agile</span>
+                            <span class="project-date">Dec 2025</span>
+                        </div>
+                        <h3>BiteScan</h3>
+                        <p>Android app that digitizes receipts to reduce food waste. Built virtual pantry, price history tracker, and AI-assisted recipe suggestions. Contributed UI/UX and used GitHub for collaboration.</p>
+                        <div class="project-tags">
+                            <span>Android</span>
+                            <span>Java/Kotlin</span>
+                            <span>GitHub</span>
+                            <span>Agile</span>
+                        </div>
+                        <a href="https://github.com/Will-Trinh/BiteScan.git" class="project-link" target="_blank" rel="noopener">
+                            View on GitHub <span class="arrow">→</span>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span class="project-type">School</span>
+                            <span class="project-date">Dec 2025</span>
+                        </div>
+                        <h3>Semantic PDF Reader</h3>
+                        <p>Built a semantic search tool over PDFs using TF-IDF and cosine similarity. Applied NLP preprocessing and vector-space modeling to surface relevant sections from user queries.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>TF-IDF</span>
+                            <span>NLP</span>
+                        </div>
+                        <a href="https://github.com/tnguyen4513/429sampleproject.git" class="project-link" target="_blank" rel="noopener">
+                            View on GitHub <span class="arrow">→</span>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span class="project-type">School</span>
+                            <span class="project-date">Apr – May 2023</span>
+                        </div>
+                        <h3>Course List Manager</h3>
+                        <p>Led a team of four building a C++ application to manage computer science course data, including search and list management features. Provided technical guidance and coordinated delivery.</p>
+                        <div class="project-tags">
+                            <span>C++</span>
+                            <span>Team Lead</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certs" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">05</span>
+                    <h2>Certifications</h2>
+                </div>
+                <div class="certs-list">
+                    <div class="cert-item">
+                        <div>
+                            <h3>CompTIA Security+</h3>
+                            <p>Expected 2026</p>
+                        </div>
+                        <span class="cert-status">In Progress</span>
+                    </div>
+                    <div class="cert-item">
+                        <div>
+                            <h3>Certificate of Specialization – C++ Programming</h3>
+                            <p>Orange Coast College · May 2023</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1ODMrbv70Y7cu9sqqAhdRSM07bAMJC3XD/view" class="btn btn-small" target="_blank" rel="noopener">
+                            View <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section section-alt">
+            <div class="container contact-container">
+                <div class="section-header">
+                    <span class="section-tag">06</span>
+                    <h2>Get in Touch</h2>
+                </div>
+                <p class="contact-text">
+                    Open to entry-level IT support and cybersecurity opportunities in Orange County or remote.
+                </p>
+                <a href="mailto:ntran.nguyen23@gmail.com" class="btn btn-primary btn-large">
+                    ntran.nguyen23@gmail.com <span class="arrow">→</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Tran Nguyen</p>
+            <div class="footer-links">
+                <a href="https://github.com/tnguyen4513" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/tran-nguyen-667853258/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
- 
-     <section id="about">
-         <img src="myimage.jpg" alt="My Picture" class="center">
-         <br>
-         <h2>About Me</h2>
-         <p>Greetings, I’m Tran Nguyen, a recent graduate with a BS in Computer Science from California State University Long Beach (December 2025). 
-            I have a strong interest in the field of data science and am actively building my skills to pursue a career in this area. Although I am 
-            early in my professional journey, I am eager to apply my analytical mindset and technical knowledge to real-world data challenges. I am 
-            bilingual in Vietnamese and English, which enables me to communicate effectively with diverse teams and stakeholders. I am seeking 
-            opportunities to grow as a data analyst, ideally in Orange County or in a fully remote role, where I can contribute to data-driven decision-making.
-         </p>
-     </section>
- 
-     <section id="skills">  
-         <h2>Skills</h2>
-         <ul>
-             <li>Languages: C++, Python, Javascript, Java, MIPS Assembly, Kotlin</li>
-             <li>Web and Database: HTML, CSS, SQL, IBM Db2, MySQL</li>
-             <li>Framework and Technologies: Git, Linux, Visual Studio Code, Tkinter, React, MS Office (Excel, Word), Android Studio</li>
-         </ul>  
-     </section>
- 
-     <section id="experience">  
-         <h2>Work Experience</h2>
-         <p> IT Student Assistant <br>
-         <em>CSU Long Beach – College of the Arts Dean’s Office</em> 
-         <br> October 2024 - May 2025 </p>
-         <ul>
-             <li>Completed Microsoft training to strengthen technical skills and enhance IT support capabilities.</li>
-             <li>Designed and developed SharePoint sites (e.g.: ICT Procurement Compliance Review process) to centralize 
-             information for the COTA IT department and improve accessibility for team members.</li>
-             <li>Provided basic technical support for faculty, staff, and students, addressing computer inquiries and 
-             troubleshooting hardware/software issues in MAC and PC environments.</li>
-             <li>Collaborated with the IT team to ensure the smooth functioning of systems and the delivery of timely 
-             support services.</li>
-             <li>Demonstrated strong attention to detail, effective communication, and a customer-focused approach in all interactions.</li>
-         </ul>
-         <p> Customer Service Associate <br>
-         <em>H-Mart, Garden Grove, CA</em> <br> June 2021 - Present </p>
-         <ul>
-             <li>Delivered high-quality customer service by addressing inquiries and resolving issues efficiently.</li>
-             <li>Worked with Excel to maintain and update purchase and sale reports, contributing to efficient 
-             inventory management.</li>
-             <li>Used BarTender software to print signs and labels, supporting store promotions and product organization.</li>
-             <li>Managed and organized invoices, receipts, and critical business documents using shared drives and a centralized 
-             server to streamline operations and maintain accurate records.</li>
-             <li>Uploaded and maintained digital files, ensuring timely updates and accessibility across the team.</li>
-         </ul>
-     </section>
- 
-     <section id="project">
-         <h2>My Projects</h2>
-         <p> <b> BiteScan </b> | Android Studio, Java/Kotlin, GitHub, Agile |    
-         <a href="https://github.com/Will-Trinh/BiteScan.git" class="external-link">Link</a><br>
-         <em>School Group Project</em> <br> Dec 2025 </p>
-         <ul>
-             <li>Collaborated in an Agile team to develop BiteScan, an Android app aimed at reducing food waste by digitizing 
-                receipts and helping users understand their purchasing and consumption habits.</li>
-             <li>Built a virtual pantry feature that updates automatically based on scanned purchases, supporting better food 
-                inventory management.</li>
-             <li>Developed a price history tracker that shows users where they previously purchased an item and at what price.</li>
-             <li>Integrated recipe generation using Google search and AI-powered suggestions via an LLM to help users make use of ingredients on hand.</li>
-             <li>Contributed to UI/UX design and used GitHub for source control, issue tracking, and collaborative development.</li>
-            </ul>
-
-         <p> <b> Semantic PDF Reader </b> | Python, TF-IDF, Cosine Similarity |    
-         <a href="https://github.com/tnguyen4513/429sampleproject.git" class="external-link">Link</a><br>
-         <em>School Group Project</em> <br> Dec 2025 </p>
-         <ul>
-             <li>Built a semantic PDF reader using TF-IDF and cosine similarity to retrieve relevant document sections based on user queries.</li>
-             <li>Applied NLP preprocessing techniques and vector-space modeling to improve semantic search accuracy.</li>
-            </ul>
-
-         <p> <b> To-Do List App </b> | React, JavaScript, CSS |    
-         <a href="https://tnguyen4513.github.io/todolist/" class="external-link">Link</a><br>
-         <em>YouTube Tutorial Project</em> <br> Aug 2024 </p>
-         <ul>
-             <li>Developed a responsive to-do list application using React.</li>
-             <li>Implemented features for task management, including adding, deleting, updating, 
-             and marking tasks as complete.</li>
-             <li>Improved user experience through state management and functional components.</li>
-         </ul>
-         
-         <p> <b> 2048 Game </b> | HTML, JavaScript, CSS | 
-         <a href="https://tnguyen4513.github.io/2048/2048.html" class="external-link">Link</a><br>
-         <em>YouTube Tutorial Project</em> <br> Aug 2024 </p>
-         <ul>
-             <li>Created the classic 2048 game using HTML, JavaScript, and CSS.</li>
-             <li>Developed game mechanics like tile merging and score tracking.</li>
-             <li>Focused on clean code practices and responsive design for a smooth user experience.</li>
-         </ul>
-         
-         <p> <b>Course list</b> | C++  <br>
-         <em>School Group Project</em> <br> April 2023 - May 2023 </p>
-         <ul>
-             <li>Directed a team of four in designing and developing a console application to manage 
-             and manipulate computer science course data for Orange Coast College.</li>
-             <li>Oversaw the implementation of search functionality and list management features, 
-             ensuring a smooth and responsive user experience.</li>
-             <li>Provided leadership and technical guidance, fostering collaboration and efficient 
-             project completion.</li>
-         </ul>
-         
-         <p> <b>Pizza Ordering App</b> | Python <br>
-         <em>School Group Project</em> <br> Oct 2022 - Nov 2022 </p>
-         <ul>
-             <li>Collaborated in a team of two to develop a pizza ordering application.</li>
-             <li>Implemented a user-friendly interface using Tkinter which allows users to 
-             select pizza size, crust, and toppings from a given menu.</li>
-             <li>Developed features to display an order summary and calculate the total cost.</li>
-         </ul>
-     </section>
- 
-     <section id="certification">  
-         <h2>Certification</h2>
-         <p> <b> Certificate of Specialization - C++ Programming | </b>
-         <a href="https://drive.google.com/file/d/1ODMrbv70Y7cu9sqqAhdRSM07bAMJC3XD/view"
-         class="external-link">Link</a> </p>
-         <ul>
-             <li>Awarded by Orange Coast College, Costa Mesa in May 2023.</li>
-             <li>Completed coursework in object-oriented programming, data structures, and algorithms using C++.</li>
-         </ul>  
-     </section>
- 
-     <section id="contact">
-         <h2>Contact Me</h2> 
-         <a href="mailto:ntran.nguyen23@gmail.com">ntran.nguyen23@gmail.com</a>
-     </section>
-     
- 
-     <footer>
-         <p>&copy; 2024 Tran Nguyen. All rights reserved.</p>
-     </footer>
- </body>
- </html>
- 
+</body>
+</html>
