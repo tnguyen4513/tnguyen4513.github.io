@@ -936,3 +936,43 @@ body.light-mode .header {
         justify-content: center;
     }
 }
+
+/* ===== Scroll reveal ===== */
+.reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Slightly richer card hover */
+.skill-card,
+.project-card,
+.cert-item {
+    transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover,
+.project-card:hover {
+    box-shadow: 0 8px 28px rgba(139, 124, 246, 0.12);
+}
+
+/* Accent underline on section titles */
+.section-header h2 {
+    position: relative;
+}
+
+.section-header h2::after {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 2px;
+    margin-top: 8px;
+    background: var(--accent);
+    border-radius: 1px;
+    opacity: 0.7;
+}
